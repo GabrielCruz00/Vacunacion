@@ -1,0 +1,131 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Fight virus with vaccines */
+.f-icon{
+    height: 25px;
+}
+/* END of Fight virus with vaccines */
+
+/* Schedule your vavvinations*/
+details {
+    width: 25%;
+    margin-bottom: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), 4px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+summary {
+    color: rgb(31, 62, 114);
+    padding: 15px;
+    display: block;
+    padding-left: 35px;
+    position: relative;
+    cursor: pointer;  
+    list-style: none;
+}
+summary:before {
+    content: '▷';
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+    transform: rotate(0);
+    transform-origin: .2rem 50%;
+    transition: .25s transform ease; 
+}  
+details[open] > summary:before {
+    transform: rotate(90deg);
+}
+details summary::-webkit-details-marker {
+    display:none;
+}
+.s-icon{
+    height: 25px;
+    vertical-align: middle;
+}
+th{
+    color: rgb(31, 62, 114);
+}
+select, input{
+    border-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+table{
+    border-spacing: 10px 10px;
+}
+/* End Schedule your vaccinations */
+
+/* Why should I vaccine */
+#in-01, #in-02, #in-03, #in-04{
+    padding: 50px;
+    
+}
+
+.row{
+    margin: 8px -16px;
+}
+.row, .row > .col{
+    padding: 8px;
+}
+.col{
+    float: left;
+    width: 25%;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.content{
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    transition: 3s;
+}
+.content:hover{
+    transform: scale(1.3, 1.3);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.w-icon{
+    width: 40px;
+}
+@media screen and (max-width: 1300px) {
+    .col{
+      width: 50%;
+    }
+  }
+  
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 770px) {
+   .col{
+        width: 100%;
+    }
+ }
+ /* END of Why should I vaccine? */
+
+ /* Preparations before vaccine */
+ .p-icon{
+    height: 25px;
+    vertical-align: middle;
+}
+/* End preparations before vaccine */
+
+/* Emergency Contact */
+.c-icon{
+    height: 45px;
+}
+/* button{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgb(31, 62, 114);
+    padding: 0%;
+    margin: 8px 0;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.0);
+    cursor: pointer;
+    width: 200px;
+} */
+/* End emergency contact */
