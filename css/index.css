@@ -7,12 +7,36 @@
 .f-icon{
     height: 25px;
 }
+#in-01{ 
+    overflow: hidden;
+    padding: 20px 75px;
+    padding-right: 0;
+}
+.section-tittle, .section-content{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 40%;
+    
+}
+#cont-img-01{
+    width: 50%;
+    height: 50%;
+    float: right;
+    padding-right: 0;
+}
+.img-01{
+    float: right;
+    width: 100%;   
+}
+#in-01 > span{
+    color: rgb(31, 62, 114);
+}
 /* END of Fight virus with vaccines */
 
 /* Schedule your vavvinations*/
 details {
-    width: 25%;
-    margin-bottom: 8px;
+    width: 23.5rem;
+    margin-top: 4rem;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), 4px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     overflow: hidden;
@@ -52,6 +76,7 @@ th{
     color: rgb(31, 62, 114);
 }
 select, input{
+    color: rgb(31, 62, 114);
     border-color: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), 4px 4px 8px rgba(0, 0, 0, 0.1);
@@ -71,25 +96,24 @@ button:hover{
 table{
     border-spacing: 10px 10px;
 }
+
 /* End Schedule your vaccinations */
 
 /* Why should I vaccine */
-#in-01, #in-02, #in-03, #in-04{
+#in-02{
     padding: 50px;
-    
 }
-
-.row{
+.w-row{
     margin: 8px -16px;
 }
-.row, .row > .col{
+.w-row, .w-row > .w-col{
     padding: 8px;
 }
-.col{
+.w-col{
     float: left;
     width: 25%;
 }
-.row:after{
+.w-row:after{
     content: "";
     display: table;
     clear: both;
@@ -97,7 +121,7 @@ table{
 .content{
     background-color: white;
     width: 300px;
-    height: 200px;
+    height: auto;
     padding: 10px;
     transition: 3s;
 }
@@ -109,14 +133,14 @@ table{
     width: 40px;
 }
 @media screen and (max-width: 1300px) {
-    .col{
+    .w-col{
       width: 50%;
     }
   }
   
  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
  @media screen and (max-width: 770px) {
-   .col{
+   .w-col{
         width: 100%;
     }
  }
@@ -127,20 +151,87 @@ table{
     height: 25px;
     vertical-align: middle;
 }
+#in-03{ 
+    overflow: hidden;
+    display: flexbox;
+    padding: 20px 75px;
+    padding-left: 0;
+}
+#in-03 > div.section-tittle{
+    float: right;
+    padding-left: 10%;
+    display: block;
+    margin-bottom: 0;
+    margin-right: 75px;
+}
+div.details{
+    margin-top: 0;
+    display: block;
+    float: right;
+    margin-right: 7%;
+}
+.details > details{
+    width: 23.5rem;
+    margin-top: 10%
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), 4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+#cont-img-03{
+    width: 50%;
+    float: left;
+}
+.img-03{
+    float: left;
+    width: 100%;
+}
 /* End preparations before vaccine */
 
 /* Emergency Contact */
 .c-icon{
     height: 45px;
 }
-/* button{
+#in-04{ 
+    overflow: hidden;
+    display: flexbox;
+    padding: 20px 75px;
+    padding-right: 0;
+}
+#cont-img-04{
+    width: 50%;
+    float: right;
+}
+.img-04{
+    float: right;
+    width: 100%;
+}
+/* Contenedor principal */
+.contact{ 
+    display: flex;
+    margin: 8px -16px;
+} 
+/* para las columnas de la tabla */
+.row-contact, .row-contact > .col-contact{
+    padding: 8px;
+}
+.col-contact{
+    float: left;
+    width: 25%;
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    margin: 2.5rem;
+}
+.col-contact > button{
     background-color: rgba(255, 255, 255, 0.2);
     color: rgb(31, 62, 114);
-    padding: 0%;
     margin: 8px 0;
-    border-radius: 10px;
     border-color: rgba(0, 0, 0, 0.0);
     cursor: pointer;
     width: 200px;
-} */
+    font-size: large;
+}
+.col-contact > button:hover{
+    background-color: rgba(0, 84, 191, 0.8);
+    color: white;
+}
 /* End emergency contact */
